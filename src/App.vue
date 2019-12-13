@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+ 
 }
+const obj = {
+//                          _oo0oo_
+//                         088888880
+//                         88" . "88
+//                         (| -_- |)
+//                         0\  =  /0
+//                       ___/'---'\___
+//                     .' \\|     |// '.
+//                    / \\|||  :  |||// \
+//                   / -||||| -:- |||||- \
+//                  |   | \\\  -  /// |   |
+//                  | \_|  ''\---/''  |_/ |
+//                  \  .-\__  '-'  __/-.  /
+//                ___'. .'  /--.--\  '. .'___
+//             ."" '<  '.___\_<|>_/___.'  >' "".
+//            | | :  '- \'.;'\ _ /';.'/ -'  : | |
+//            \  \ '_.   \_ __\ /__ _/   ._' /  /
+//        ====='-.____'.___ \_____/ ___.'____.-'=====
+//                          '=---='
+//
+//        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//                 佛祖保佑        永无BUG
+//
+//        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+}
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='less'>
+  @import 'assets/less/index.less';
 </style>
+
+
+
