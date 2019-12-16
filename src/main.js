@@ -170,6 +170,7 @@ axios.interceptors.request.use(config=>{
 
 Vue.prototype.$http = axios
 Vue.prototype.$message = Message;
+Vue.prototype.$confirm = MessageBox.confirm
 
 
 Vue.config.productionTip = false

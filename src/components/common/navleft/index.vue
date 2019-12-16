@@ -7,7 +7,6 @@
       :collapse="$store.state.isCollapse"
       :default-active="activePath"
       router
-      class="el-menu-vertical-demo"
      >
 
        <template v-for="item in menus">
@@ -21,7 +20,7 @@
                     <i :class="iconsObj[item.id]"></i>
                     <span slot="title">{{item.authName}}</span>
                 </template>
-                <el-menu-item v-for="(obj,i) in item.children" :key='i' :index="obj.path" @click='saveNavState(obj.path)'>
+                <el-menu-item v-for="(obj,i) in item.children" :key='i' :index="'/'+obj.path" @click='saveNavState(obj.path)'>
                     <i class="el-icon-menu"></i>
                     <span slot="title">{{obj.authName}}</span>
                 </el-menu-item>
@@ -58,7 +57,7 @@
        default(){
          return {
            bgCol:'#333744',
-           activeCol:'#409EFF',
+           activeCol:'#409eff',
            tCol:'#fff'
          }
        }

@@ -9,9 +9,10 @@
           <nav-left :menus='menus'/>
       </el-aside>
       <el-main>
-          <div class='content'>
+          <!-- <div class='content'>
               <router-view></router-view>
-          </div>
+          </div> -->
+          <router-view></router-view>
       </el-main>
   </el-container>
 </el-container>
@@ -64,13 +65,13 @@ import NavLeft from 'components/common/navleft'
       }
       .el-main{
         background: #F8F8F8;
-        .content{
-          width: 100%;
-          height: 100%;
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-        }
+        // .content{
+        //   width: 100%;
+        //   height: 100%;
+        //   background: #fff;
+        //   border-radius: 8px;
+        //   padding: 20px;
+        // }
       }
   }
  

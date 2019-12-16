@@ -44,7 +44,7 @@
         this.$refs.userForm.validate(async vali=>{
             if(!vali) return
             let {data:res} = await this.$http.post('login',this.userForm)
-            console.log(res.data)
+            // console.log(res.data)
             if(res.meta.status!==200) return this.$message.error('登录失败')
             this.$message.success('登录成功')
             window.sessionStorage.setItem('token',res.data.token)
