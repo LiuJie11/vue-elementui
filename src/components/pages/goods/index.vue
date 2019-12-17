@@ -59,7 +59,7 @@
           </el-form-item>
         </el-form>  
        <span slot="footer" class="dialog-footer">
-          <el-button @click="editRoleDialogVisible = false">取 消</el-button>
+          <el-button @click="editRoleDialogVisible=false">取 消</el-button>
           <el-button type="primary" @click="editRoleConfirm">确 定</el-button>
       </span>
     </el-dialog>
@@ -71,7 +71,6 @@
 </template>
 
 <script>
-import { get } from 'http'
  export default {
      name:'Goods',
    data () {
@@ -111,10 +110,10 @@ import { get } from 'http'
      },
      //展示编辑角色对话框
     async editRole(role,index){
-      
-       console.log(role)
-       this.editRoleForm = role
       this.editRoleDialogVisible =true
+        const _role = {...role}
+       this.editRoleForm = _role
+      
     },
     //编辑角色对话框的确认按钮
     editRoleConfirm(){
