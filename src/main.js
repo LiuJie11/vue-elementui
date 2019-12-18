@@ -83,6 +83,9 @@ import {
   Notification
 } from 'element-ui';
 
+// 引入第三方插件库
+import TreeTable from 'vue-table-with-tree-grid'
+
 Vue.use(Pagination);
 Vue.use(Dialog);
 Vue.use(Autocomplete);
@@ -158,6 +161,9 @@ Vue.use(PageHeader);
 Vue.use(CascaderPanel);
 
 Vue.use(Loading.directive);
+
+Vue.component('tree-table', TreeTable)
+
 
 //请求
 import axios from 'axios'

@@ -60,10 +60,7 @@ import NavLeft from 'components/common/navleft'
       .el-aside{
         background: #242f42;
       }
-      .el-main{
-        background: #F8F8F8;
-        height: 100vh;
-      }
+     
   }
  
 </style>

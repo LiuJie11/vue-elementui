@@ -1,8 +1,8 @@
 <template>
- <div class='rights_container'>
+ <div>
    <!-- 面包屑 -->
       <el-breadcrumb>
-        <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
         <el-breadcrumb-item>权限管理</el-breadcrumb-item>
         <el-breadcrumb-item>权限列表</el-breadcrumb-item>
     </el-breadcrumb>
@@ -67,16 +67,7 @@
 </script>
 
 <style lang='less' scoped>
-  .rights_container{
-    height: calc(100% - 100px);
-     .el-card{
-      height: 100%;
-      overflow-y:scroll;
-     }
-     .el-card::-webkit-scrollbar{
-       display: none
-     } 
-  }
+ 
  
  
 </style>
