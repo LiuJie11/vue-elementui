@@ -40,6 +40,11 @@ const routes = [
                 component:()=>import('components/pages/goods')
             },
             {
+                path:'/goods/addgood',
+                name:'addgood',
+                component:()=>import('components/pages/goods/addgood')
+            },
+            {
                 path:'/params',
                 name:'params',
                 component:()=>import('components/pages/params')
