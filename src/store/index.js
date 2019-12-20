@@ -6,8 +6,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state:{
         info:null,
-        count:1,
         isCollapse:true ,//控制导航是否折叠
+        loading:false,//实现页面加载数据效果
     },
     getters:{},
     mutations:{
@@ -16,6 +16,10 @@ const store = new Vuex.Store({
        },
        setcollapse(state,bol){
            state.isCollapse=bol
+       },
+       //改变数据加载的loding
+       setloading(state,bol){
+        state.loading = bol
        }
     },
     actions:{
@@ -25,10 +29,9 @@ const store = new Vuex.Store({
         setcollapse(context,bol){
             context.commit('setcollapse',bol)
         },
-        add(context,num){
-            console.log(num)
-            context.commit('add',num)
-        }
+        setloading(context,bol){
+            context.commit('setloading',bol)
+        },
     },
     modules:{}
 })

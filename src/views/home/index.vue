@@ -17,7 +17,6 @@
 
 <script>
 import VHeader from 'components/common/vheader'  
-import VMain from 'views/main'
 import NavLeft from 'components/common/navleft'
 
 
@@ -25,7 +24,6 @@ import NavLeft from 'components/common/navleft'
    name:'Home',  
    components:{
        VHeader,
-        VMain,
         NavLeft
    },
    data () {

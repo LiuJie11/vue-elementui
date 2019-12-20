@@ -1,5 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app"  
+      v-loading="$store.state.loading"
+      element-loading-text="拼命加载中"
+      element-loading-spinner="el-icon-loading"
+      element-loading-background="rgba(0, 0, 0, 0.8)"
+    >
     <router-view></router-view>
   </div>
 </template>

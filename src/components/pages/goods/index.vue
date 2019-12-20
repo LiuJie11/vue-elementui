@@ -61,7 +61,7 @@
             width='130px'
            >
               <template slot-scope='scope'>
-                  <el-button type="primary" icon="el-icon-edit" size="mini"></el-button>
+                  <el-button type="primary" icon="el-icon-edit" size="mini" @click="editGoods"></el-button>
 
                   <el-button type="danger" icon="el-icon-delete" size="mini" @click='removeGoods(scope.row.goods_id)'></el-button>
               </template>
@@ -147,7 +147,10 @@
       goAddGoodPage(){
         this.$router.push('/goods/addgood')
       },
-
+      // 修改商品信息
+      editGoods(){
+        this.$message.warning('此功能未完成！')
+      }
 
    },
 
